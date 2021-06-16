@@ -1,0 +1,128 @@
+@font-face
+{
+    font-family: pixelartFont;
+    src: url(fonts/joystix_monospace.ttf)
+}
+@keyframes colorchanging
+{
+    from{color:white;}
+    to{color: greenyellow;}
+}
+@keyframes buttonshine
+{
+    from{background-color: rgba(255, 255, 255, 0);}
+    to{background-color: rgba(0, 255, 15, 0.2);}
+}
+body
+{
+    margin: 0;
+    color: white;
+    font-family: pixelartFont;
+    background-image: url(images/background.png);
+}
+.menu
+{
+
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 255, 0, 0.1);
+    font-size: 30px;
+}
+table
+{
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+th
+{
+    border-color: rgba(255, 255, 255, 0.1);
+    border-style: double;
+}
+th:hover
+{
+    background-color: rgba(0, 255, 0, 0.15);
+    border-color: white;
+    animation: buttonshine 1s infinite;
+    animation-direction: alternate-reverse;
+}
+.form
+{
+    position: relative;
+    width: auto;
+}
+form.register
+{
+    
+    margin: 15px;
+    padding: 10px;
+    width: 20%;
+    border: double white;
+}
+input[type=submit]
+{
+    width: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: pixelartFont;
+}
+input
+{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+h1.register
+{
+    animation: colorchanging 1s infinite;
+    animation-direction: alternate-reverse;
+    font-size: 32px;
+    font-size: 2vw;
+    text-align: center;
+}
+form.log-in
+{
+    
+    margin: 15px;
+    padding: 10px;
+    width: 20%;
+    border: double white;
+}
+h1.log-in
+{
+    animation: colorchanging 1s infinite;
+    animation-direction: alternate-reverse;
+    font-size: 32px;
+    font-size: 2vw;
+    text-align: center;
+}
+container
+{
+    display: flex;
+}
+.textarea
+{
+    border: double white;
+    margin-top: 15px;
+    width: 1000px;
+    padding: 10px;
+}
+.forms
+{
+    margin-right: -70%;
+    flex-basis: 100%;
+}
+p
+{
+    animation: colorchanging 1s infinite;
+    animation-direction: alternate-reverse;
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+}
+content
+{
+    font-size: 16px;
+}

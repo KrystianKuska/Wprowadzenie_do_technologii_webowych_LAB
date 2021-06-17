@@ -1,5 +1,4 @@
-var cookie = document.getElementsByClassName("cookie");
-cookie.onclick = function ()
+function close_cookies()
 {
-    cookie.style.display = "none";
+    document.getElementById("cookies").style.display = "none";
 }

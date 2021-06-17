@@ -22,8 +22,7 @@ body
 }
 .menu
 {
-
-    height: 52px;
+    height: fit-content;
     width: 100%;
     background-color: rgba(0, 255, 0, 0.1);
 }
@@ -47,21 +46,45 @@ th:hover
     animation: buttonshine 1s infinite;
     animation-direction: alternate-reverse;
 }
-.form
+div.forms
 {
-    position: relative;
-    width: auto;
+    margin-left: 5%;
+    width: 25vw;
+    max-width: 480px;
 }
 form.register
+{
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    border: double white;
+}
+form.log-in
 {
     
     margin: 15px;
     padding: 10px;
-    width: 20%;
+    width: auto;
     border: double white;
+}
+h1.register
+{
+    animation: colorchanging 1s infinite;
+    animation-direction: alternate-reverse;
+    font-size: 1.5vw;
+    text-align: center;
+}
+h1.log-in
+{
+    animation: colorchanging 1s infinite;
+    animation-direction: alternate-reverse;
+    font-size: 1.5vw;
+    text-align: center;
 }
 input[type=submit]
 {
+    font-size: 12px;
+    font-size: 0.9vw;
     width: auto;
     display: flex;
     margin-top: 10px;
@@ -75,30 +98,6 @@ input
     margin: 5px;
     padding: 5px;
 }
-h1.register
-{
-    animation: colorchanging 1s infinite;
-    animation-direction: alternate-reverse;
-    font-size: 32px;
-    font-size: 2vw;
-    text-align: center;
-}
-form.log-in
-{
-    
-    margin: 15px;
-    padding: 10px;
-    width: 20%;
-    border: double white;
-}
-h1.log-in
-{
-    animation: colorchanging 1s infinite;
-    animation-direction: alternate-reverse;
-    font-size: 32px;
-    font-size: 2vw;
-    text-align: center;
-}
 container
 {
     display: flex;
@@ -107,13 +106,9 @@ container
 {
     border: double white;
     margin-top: 15px;
-    width: 60%;
+    width: 80%;
     padding: 10px;
-}
-.forms
-{
-    margin-right: -70%;
-    flex-basis: 100%;
+    margin-right: 5%;
 }
 p
 {
@@ -136,41 +131,42 @@ a:hover
 {
     animation: colorchanging 1s infinite;
     animation-direction: alternate-reverse;
+    cursor: pointer;
 }
 .footer
 {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     font-size: 12px;
     font-size: 0.75vw;
+    padding: 5px;
 
 }
-.cookie
+#cookies
 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    height: 2vw;
     text-align: center;
-    z-index: 2;
+    width: 100%;
+    padding: 15px 10px;
     background-color: black;
-}
-.pacman
-{
-    width: 80px;
-    height: 80px;
-}
-#cookie
-{
-    height: 20px;
-    width: 20px;
-    z-index: 3;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    right: 0;
-    vertical-align: middle;
-    text-align-last: center;
+    left: 0;
+}
+.images
+{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.img
+{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+img:hover
+{
+    transform: scale(1.1);
 }

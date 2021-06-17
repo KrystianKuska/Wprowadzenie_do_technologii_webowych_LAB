@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retro website">
+    <meta name="keywords" content="pixelart, retro">
+    <meta name="author" content="Krystian Kuska">
     <link rel="stylesheet" href="style.css">
     <title>Krystian Kuska</title>
 </head>
@@ -15,12 +18,12 @@
             <th><a href="info.html">INFORMACJE</a></th>
             <th><a href="contact.html">KONTAKT</a></th>
             <th><a href="gallery.html">GALERIA</a></th>
-            <th><a href="profilehtml">PROFIL</a></th>
+            <th><a href="profile.html">PROFIL</a></th>
         </table>
     </div>
     <container>
     <div class="forms">
-        <div class="form">
+        <!-- <div class="register"> -->
             <form class="register">
                 <h1 class="register">REJESTRACJA</h1>
                 <ul>
@@ -30,8 +33,8 @@
                     <input type="submit" value="ZAREJESTRUJ">
                 </ul>
             </form>
-        </div>
-        <div class="log-in">
+        <!-- </div> -->
+        <!-- <div class="log-in"> -->
             <form class="log-in">
                 <h1 class="log-in">LOGOWANIE</h1>
                 <ul>
@@ -40,7 +43,7 @@
                     <input type="submit" value="ZALOGUJ">
                 </ul>      
             </form>
-        </div>
+        <!-- </div> -->
     </div>
     <div class="textarea">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dolor atque perspiciatis?</p>
@@ -49,15 +52,17 @@
         </content>
     </div>
     </container>
-    <div class="track">
-        <img class="pacman" src="images/pacman.png">
-    </div>
+    <container class="images">
+        <img height="150px" class="img" src="images/cat_img.png" alt="pixel_art_cat">
+        <img height="150px" class="img" src="images/pacman_img.png" alt="pixel_art_pacman">
+        <img height="150px" class="img" src="images/pizza_img.png" alt="pixel_art_pizza">
+        <img height="150px" class="img" src="images/tree_img.png" alt="pixel_art_tree">
+    </container>
     <div class="footer">
-        Krystian Kuska ©2021
+        Krystian Kuska ©2021 || <a href="https://github.com/KrystianKuska/Wprowadzenie_do_technologii_webowych_LAB.git">GitHub</a>
     </div>
-    <div class="cookie">
-        Strona używa plików cookie
-        <div id="cookie">X</div>
+    <div id="cookies">
+        Strona używa plików cookie <a onclick="close_cookies()">X</button>
     </div>
 </body>
 </html>
